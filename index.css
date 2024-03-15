@@ -1,3 +1,25 @@
-#heading{
-    color: red ;
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(38, 124, 130)
+}
+
+.headings{
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+}
+
+
+#container{
+    border: 2px solid rgb(150, 207, 211);
+    width: 50vh;
+    margin: auto;   
+    border-radius: 30px;
+    box-sizing: border-box  ;
+    background-color:rgb(90, 166, 172);
 }

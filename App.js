@@ -1,22 +1,33 @@
-/*
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-<div class="parent">
-    <div class="child1">
-        <h1>I' m h1 tag</h1>
-        <h2>I' m h2 tag</h2>
-    </div>
-    <div class="child2">
-        <h1>I' m h1 tag</h1>
-        <h2>I' m h2 tag</h2>
-    </div>
-</div>
-*/
+// const parent = React.createElement("div", { id: "parent" },[React.createElement("div", { className: "child" },
+// [React.createElement("h1", {}, "I'm a heading tag"),React.createElement("h2", {}, "I'm a heading (h2) tag")]),React.createElement("div", { className: "child" },
+// [React.createElement("h1", {}, "I'm a heading tag"),React.createElement("h2", {}, "I'm a heading (h2) tag")])   ]);
+// console.log(parent);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent);
 
 
 
-const parent = React.createElement("div", { id: "parent" },[React.createElement("div", { id: "child" },
-[React.createElement("h1", {}, "I'm a heading tag"),React.createElement("h2", {}, "I'm a heading (h2) tag")]),React.createElement("div", { id: "child" },
-[React.createElement("h1", {}, "I'm a heading tag"),React.createElement("h2", {}, "I'm a heading (h2) tag")])   ]);
-console.log(parent);
+//heading (react element) ==>babel ==> React.createElement("div",{id :"heading1"},This is Bhanu kumar kotha) ==> js engine understands it
+const heading = (<h1 id="heading1" className="headings">This is Bhanu kumar kotha</h1>);
+
+const Title = ()=>(<div>
+    <h1 className="headings">Hello coherts 🐱‍🚀</h1>
+    {heading}
+</div>)
+
+// functional component 
+
+
+
+
+const HeadingComponent = ()=>(<div id="container">
+    {Title()}
+    <Title></Title>
+    <Title/>
+    <h1 className="headings">Welcome to portal</h1>
+</div>);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<HeadingComponent/>);
