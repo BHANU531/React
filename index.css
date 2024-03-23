@@ -77,6 +77,16 @@ body {
     margin-top: 20px;
 }
 
+.filter-btn{
+    margin: 10px;
+    padding: auto;  
+}
+
+
+
+
+
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .header {
